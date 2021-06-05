@@ -1,9 +1,12 @@
+.contentBox{
+    display: flex;
+}
+
 .iconBox{
     border-radius: 100%;
     position: relative;
     border: 2px transparent;
     margin: 20px;
-    display: inline-block;
     width: 65px;
     height: 65px;
     cursor: pointer;

@@ -1,5 +1,6 @@
 import React from 'react';
 import './icon.css';
+import Tooltip from './tooltip';
 
 function IconList() {
     const icons = [
@@ -7,25 +8,29 @@ function IconList() {
         id: 1,
         name: "github",
         url: "/img/github.svg",
-        link: "https://hoyeon96.github.io/githubUi"
+        link: "https://hoyeon96.github.io/githubUi",
+        preview: "/img/github_preview.png"
     },
     {
         id: 2,
         name: "bootstrap",
         url: "/img/bootstrap.svg",
-        link: "https://hoyeon96.github.io/bootstrapUi/"
+        link: "https://hoyeon96.github.io/bootstrapUi/",
+        preview: "/img/bootstrap_preview.png"
     },
     {
         id: 3,
         name: "hakjeom_cal",
         url: "/img/calculator.svg",
-        link: "https://hoyeon96.github.io/JS_hw/"
+        link: "https://hoyeon96.github.io/JS_hw/",
+        preview: "/img/jshw_preview.png"
     },
     {
         id: 4,
         name: "facebook",
         url: "/img/facebook.svg",
-        link: "https://www.facebook.com"
+        link: "https://www.facebook.com",
+        preview: null
     },
     {
         id: 5,
@@ -54,16 +59,19 @@ function IconList() {
   ];
 
   return (
-      <div>
+      <div className="contentBox">
         {console.log(icons)}
         {icons.map((icons,index) =>{
             console.log(icons)
-            return <div className="iconBox" key={index}>
+            return <Tooltip preview={icons.preview} key={index}>
+                    <div className="iconBox" key={index}>
                      <span className="wave"></span>
                         <a target="blank" href={icons.link}>
                             <img src={icons.url} alt="icon"/>
                         </a>
-                    </div>;
+                    </div>
+                    </Tooltip>
+
             })}
       </div>
         
