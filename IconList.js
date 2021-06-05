@@ -1,7 +1,7 @@
 import React from 'react';
 import './icon.css';
 
-function IconList({id}) {
+function IconList() {
     const icons = [
     {
         id: 1,
@@ -54,17 +54,18 @@ function IconList({id}) {
   ];
 
   return (
-    <div className="icons">
+      <div>
         {console.log(icons)}
-            {icons.map(icons =>{
-                console.log(icons)
-            return <div class="iconBox">
+        {icons.map((icons,index) =>{
+            console.log(icons)
+            return <div className="iconBox" key={index}>
                         <a target="blank" href={icons.link}>
-                            <img src={icons.url} />
+                            <img src={icons.url} alt="icon"/>
                         </a>
-                   </div>;
+                    </div>;
             })}
-    </div>
+      </div>
+        
   );
 }
 

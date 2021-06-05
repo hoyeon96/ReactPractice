@@ -7,12 +7,8 @@
     height: 65px;
 }
 
-.iconBox a{
-    justify-content: center;
-}
-
 .iconBox img{
-    fill : white;
-    width: 65px;
-    height: 65px;
+    width: 32px;
+    height: 32px;
+    padding: 15px;
 }

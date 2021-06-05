@@ -9,7 +9,8 @@ function Avatar(){
                     height: "180px",
                     border: "3px solid white",
                     borderRadius: "80%"
-                }}/>
+                }}
+                alt="myProfile"/>
         </div>
     )
 }
