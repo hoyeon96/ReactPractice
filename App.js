@@ -1,26 +1,20 @@
 import React from 'react';
 import Avatar from './mypic';
 import Icon from './icon';
-import bg from './img/background.jpg';
+import IconList from './IconList';
 import './App.css';
 
 function App() {
   return (
-    <div>
+    <div class="main">
       <div class="content">
-        <img src={bg} class="bg"/>
+        <img src="img/background.jpg" class="bg"/>
         <Avatar />
         <h1>Hoyeon Yun</h1>
         <h3>Dev. yeon</h3>
       </div>
       <div class="container">
-        <Icon />
-        <Icon />
-        <Icon />
-        <Icon />
-        <Icon />
-        <Icon />
-        <Icon />
+        <IconList />
       </div>
     </div>
     

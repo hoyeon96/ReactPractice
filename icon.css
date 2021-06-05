@@ -1,0 +1,18 @@
+.iconBox{
+    border-radius: 100%;
+    border: 2px transparent;
+    margin: 20px;
+    display: inline-block;
+    width: 65px;
+    height: 65px;
+}
+
+.iconBox a{
+    justify-content: center;
+}
+
+.iconBox img{
+    fill : white;
+    width: 65px;
+    height: 65px;
+}

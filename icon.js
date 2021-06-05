@@ -1,10 +1,12 @@
-import React from 'react';
+import React, {Component} from 'react';
+import './icon.css';
+import IconList from './IconList';
 
-function Icon(){
+
+
+function Icon({name}){
     return (
-        <div>
-            아이콘
-        </div>
+                <IconList />
     );
 }
 
