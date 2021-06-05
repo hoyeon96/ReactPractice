@@ -36,3 +36,41 @@
     transform: rotate(360deg);
   }
 }
+
+
+.content {
+  padding: 100px 0 40px 0;
+  text-align: center;
+}
+
+.bg{
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+    position: fixed;
+    z-index: -999;
+    opacity: 0.8;
+}
+
+h1 {
+  color: white;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  font-size: 4em;
+  margin: -10px 0;
+}
+
+h3 {
+  color: white;
+  padding-bottom: 20px;
+  font-weight: 500;
+}
+
+.container {
+  display: inline-block;
+  color: white;
+}
