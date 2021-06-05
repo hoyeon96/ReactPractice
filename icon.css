@@ -1,14 +1,47 @@
 .iconBox{
     border-radius: 100%;
+    position: relative;
     border: 2px transparent;
     margin: 20px;
     display: inline-block;
     width: 65px;
     height: 65px;
+    cursor: pointer;
+    padding: .2em .25em;
+    overflow: hidden;
 }
+/* 
+.iconBox:hover {
+    transition: 500ms;
+    background-color: rgba(0, 0, 0, 0.25);
+} */
 
 .iconBox img{
     width: 32px;
     height: 32px;
     padding: 15px;
 }
+
+.wave {
+    opacity: .4;
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  background: rgba(0, 0, 0, 0.25);
+  width: 250px;
+  height: 250px;
+  margin-left: -150px;
+  margin-bottom: -260px;
+  transform-origin: 50% 48%;
+  border: 3px solid #333;
+  border-radius: 10px;
+  
+  transition-duration: 0.75s;
+  transition-property: margin-bottom;
+  transition-timing-function: ease;
+}
+
+.iconBox:hover .wave {
+    margin-bottom: -150px;
+    animation: rotate 2000ms infinite linear;
+  }

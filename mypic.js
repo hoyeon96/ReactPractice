@@ -1,15 +1,11 @@
 import React from 'react';
+import './mypic.css';
 
 function Avatar(){
     return (
         <div>
-            <img
+            <img className="avatar"
                 src="img/mypic.jpg"
-                style={{
-                    height: "180px",
-                    border: "3px solid white",
-                    borderRadius: "80%"
-                }}
                 alt="myProfile"/>
         </div>
     )

@@ -59,6 +59,7 @@ function IconList() {
         {icons.map((icons,index) =>{
             console.log(icons)
             return <div className="iconBox" key={index}>
+                     <span className="wave"></span>
                         <a target="blank" href={icons.link}>
                             <img src={icons.url} alt="icon"/>
                         </a>
